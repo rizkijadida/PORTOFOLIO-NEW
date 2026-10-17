@@ -27,7 +27,7 @@ export function Frameworks() {
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.map((skill, index) => (
+        {skills.reverse().map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
