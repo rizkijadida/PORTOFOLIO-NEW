@@ -140,5 +140,5 @@ html {
   scroll-behavior: smooth;
 }
 section {
-  scroll-margin-top: 5rem; /* Sesuaikan dengan tinggi navbar kamu */
+  scroll-margin-top: 5rem; 
 }
