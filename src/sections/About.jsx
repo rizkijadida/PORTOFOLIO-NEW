@@ -7,7 +7,7 @@ import { Frameworks } from "../components/Frameworks";
 const About = () => {
   const grid2Container = useRef();
   return (
-    <section className="c-space section-spacing">
+    <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
       <div className="mt-12 grid grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-6">
         {/* Grid 1 */}
@@ -100,6 +100,13 @@ const About = () => {
         </div>
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
+          <div className="z-10 w-[50%]">
+            <p className="headText">Tech Stack</p>
+            <p className="subtext">
+              I specialize in a variety of languages, frameworks, dan tools that
+              allow me to build roubust and scalable aplications
+            </p>
+          </div>
           <div className="md:inset-y- absolute inset-y-0 start-[50%] h-full w-full md:scale-125">
             <Frameworks />
           </div>
