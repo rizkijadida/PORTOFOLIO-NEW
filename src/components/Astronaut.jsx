@@ -11,7 +11,6 @@ export function Astronaut(props) {
   );
   const { actions } = useAnimations(animations, group);
 
-  // Deteksi mobile langsung di dalam komponen
   const isMobile = useMediaQuery({ maxWidth: 853 });
 
   useEffect(() => {
@@ -20,7 +19,6 @@ export function Astronaut(props) {
     }
   }, [actions, animations]);
 
-  // Ubah nilai targetY mobile menjadi lebih ke bawah (misal: -1.4 atau -1.5)
   const targetY = isMobile ? -1.4 : -1;
   const yPositon = useMotionValue(5);
   const ySpring = useSpring(yPositon, { damping: 30 });
@@ -35,7 +33,7 @@ export function Astronaut(props) {
     }
   });
 
-  // Skala dan posisi responsif (X = 0 agar tetap di tengah secara horizontal)
+  
   const currentScale = isMobile ? 0.23 : (props.scale || 0.3);
   const currentPosition = isMobile ? [0, targetY, 0] : (props.position || [1.3, -1, 0]);
 
